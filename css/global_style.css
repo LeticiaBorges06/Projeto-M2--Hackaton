@@ -1,0 +1,32 @@
+/*Estilo global da página (cores do root, elementos que se repetem...)*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Paleta de cores principal do projeto. Qualquer mudança aqui altera as cores de todos os elementos de uma só vez...*/
+    --color-black: #000000;
+    --color-brow: #120908;
+    --color-verde-marinho: #0b412c;
+    --color-verde-escuro: #235735;
+    --color-verde-claro: #447945;
+    --color-verde-floresta: #76aa5a;
+    --color-verde: #bce974;
+    --color-white: #ffffff;
+
+    /*Cores secundarias. Podem ser usadas em elementos aleatorios do projeto que NÃO interferem na identidade visual do projeto...*/
+    --color-red: #ff0000;
+    --color-yellow: #ffff00;
+    --color-green: #00ff00;
+    --color-blue: #0000ff;
+    --color-purple: #ff00ff;
+    --color-pink: #ff00ff;
+    --color-brow: #a52a2a;
+    --color-gray: #808080;
+    --color-gray-dark: #696969;
+    --color-gray-light: #c6c6c6;
+    --color-gray-lighter:  #e0e0e0;
+    --color-hray-lightest: #f0f0f0;
+}
