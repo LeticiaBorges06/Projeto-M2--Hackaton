@@ -1,4 +1,4 @@
-const usuarios=[
+const users=[
     {
         login: '1914Andre@gmail.com',
         pass: 'A19551947b'
@@ -33,12 +33,21 @@ const usuarios=[
 const clicar = document.getElementById("btn")
 clicar.addEventListener("click",()=>{
     
-    let pegaEmail = document.getElementById("gmail").value
-    let pegaPassword = document.getElementById("senha").value
+    let getEmail = document.getElementById("gmail").value
+    let getPassword = document.getElementById("senha").value
     let validaLogin = false
     
-    for (let i in usuarios){
+    for (let i in users){
+     if (getEmail ==users [i].login && getPassword == users [i].pass){
+        validaLogin = true
+        break
+     }
 
+    }
+    if (validaLogin==true){
+        alert("deu bom")
+    }else{
+        alert("deu ruim")
     }
 })
 
