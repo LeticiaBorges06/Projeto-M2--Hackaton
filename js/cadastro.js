@@ -33,7 +33,12 @@ const usuarios=[
 const clicar = document.getElementById("btn")
 clicar.addEventListener("click",()=>{
     
-    let Email = document.getElementById("gmail").value
-    let password= document.getElementById("senha").value
+    let pegaEmail = document.getElementById("gmail").value
+    let pegaPassword = document.getElementById("senha").value
+    let validaLogin = false
+    
+    for (let i in usuarios){
+
+    }
 })
 
