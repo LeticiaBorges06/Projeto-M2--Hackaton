@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackaton</title>
-    <!--Logo do Hackathon-->
-
+    <title> Hackaton</title>
     <!--Arquivo CSS Global-->
     <link rel="stylesheet" href="/css/global_style.css">
     <!--Aquivo CSS especifico dessa pagina-->
     <link rel="stylesheet" href="quarta_module.css">
+
 </head>
 <body>
-   
+    <header>
+        <h1>Depoimentos de ex viciados</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Compartilhe sua história de superação</h2>
+            <!--Formulario de cadastro de depoimentos-->
+            <form id="testimonial-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" required>
+                <label for="age">Idade:</label>
+                <input type="number" id="age" required>
+                <label for="addiction">Tipo de Vício:</label>
+                <input type="text" id="addiction" required>
+                <label for="testimonial">Depoimento:</label>
+                <textarea id="testimonial" required></textarea>
+                <button type="submit">Enviar Depoimento</button>
+            </form>
+        </section>
+        <!--Listagem dos depomentos cadastrados-->
+        <section class="testimonials-section">
+            <h2>Depoimentos</h2>
+            <div id="testimonials-container"></div>
+        </section>
+    </main>
     <script src="/js/quarta_pagina.js"></script>
 </body>
 </html>
