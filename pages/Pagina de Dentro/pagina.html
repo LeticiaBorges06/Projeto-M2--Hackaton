@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackaton</title>
-    <!--Logo do Hackathon-->
+    <!--LIND DA BIBLIOTECA DE ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FINAL DA BIBLIOTECA DE ICONS-->
+
+    <!--LINK FONT-AWESOME CDNJS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--FINAL DO LINK DA FONT-AWESOME CDNJS-->
+
+    <!--LINK DO SWIPER CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- FINAL DO LINK DO SWIPER CSS-->
+
+    <!--LINK DA BIBLIOTECA DE ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--FINAL DO DA BIBLIOTECA DE ICONS-->
 
     <!--Arquivo CSS Global-->
     <link rel="stylesheet" href="/css/global_style.css">
@@ -12,7 +26,221 @@
     <link rel="stylesheet" href="pagina_module.css">
 </head>
 <body>
-    
+    <header>
+        <section class="header">
+        <div class="container">
+
+            <div class="flex">
+
+                <a href="/index.html"><i class="bi bi-brightness-high"></i></a><!--LOGO-->
+
+                <nav class="menu">
+                    <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="#aboutUs" class="menu-item" data-info="Na ReNova, estamos comprometidos em ser sua âncora de apoio na jornada para a transformação pessoal e superação dos desafios.">Sobre nós</a></li>
+                      <li><a href="#siteTestimonials" class="menu-item" data-info="Depoimentos reais são uma fonte poderosa de inspiração e motivação. Descubra como outras pessoas têm superado seus vícios e transformado suas vidas. Encontre força e coragem através das histórias compartilhadas em nossos depoimentos.">Depoimentos</a></li>
+                      <li><a href="/pages/Quarta Pagina/quarta.html" class="menu-item" data-info="Encare seu vício de frente, encontre o caminho para a liberdade e construa uma vida que você merece.">Meu vício</a></li>
+                      <li><a href="/pages/Cadastro/cadastro.html" class="menu-item" data-info="Explore o seu perfil e desvende os passos rumo à sua renovação pessoal.">Perfil</a></li>
+                    </ul>
+                  </nav>
+
+                  <div id="menu-btn" class="fas fa-bars"></div>
+
+                  <div id="information-box"></div>
+
+                  <div class="help-button">
+                        <a href="#testemunhasSite"><button>AJUDA-ME</button></a>
+                  </div><!--Div btn-ajuda-->
+            </div><!--Div flex-->
+        </div><!--Div container-->
+        </section><!--Section Heard-->
+
+        <section>
+            <div class="text-name">
+                <h1>No ReNova, você encontrará uma jornada de transformação e superação.</h1>
+            </div>
+
+            <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+        <img src="/assets/imgs/comunidade de apoio.avif" alt="">
+        <div class="title">
+            <span>Comunidade de Apoio</span>
+            <p>Juntos somos mais fortes. Encontre apoio e compreensão aqui!</p>
+        </div><!--Div title-->
+        </div>
+        <div class="swiper-slide">
+        <img src="/assets/imgs/liberdade.webp" alt="">
+        <div class="title">
+            <span>Liberdade</span>
+            <p>Busque a sua liberdade. Sua jornada começa agora.</p>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <img src="/assets/imgs/autocuidado.jpeg" alt="">
+        <div class="title">
+            <span>Estratégias de Autocuidado</span>
+            <p>Fortaleça sua resiliência. Descubra como cuidar de si!</p>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <img src="/assets/imgs/nova historia.jpg" alt="">
+        <div class="title">
+            <span>Histórias Inspiradoras</span>
+            <p>Juntos, mais fortes. Leia e compartilhe a sua história.</p>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <img src="/assets/imgs/recursos.webp" alt="">
+        <div class="title">
+            <span>Recursos Essenciais</span>
+            <p>Explore recursos essenciais para superação!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+        </section>
+
+        <section class="about-Us" id="aboutUs">
+
+            <div class="image-about">
+                <img src="/assets/imgs/img-about.jpeg" alt="">
+            </div><!--Div image-about-->
+
+            <div class="content-about">
+                <h2>Sobre nós</h2>
+                <p>"No ReNova, nossa missão é fornecer um espaço seguro e acolhedor para aqueles que buscam superar seus vícios. 
+                    Acreditamos na importância da comunidade, do apoio mútuo e do autocuidado. Nosso objetivo é oferecer recursos educacionais, histórias inspiradoras e estratégias eficazes para ajudar nossos membros em sua jornada de recuperação. 
+                    Junte-se a nós enquanto trabalhamos juntos para alcançar a liberdade e a transformação!"</p>
+            </div><!--Div content-about-->
+            
+        </section><!--Section about-Us-->
+        
+        <section class="container-testimonials">
+            <div class="testimonials" id="siteTestimonials">
+                    <div class="testimonial-slide">
+                        <img src="/assets/imgs/pessoa 1.avif" alt="" class="testimonial-img">
+                        <p>"Comecei a usar drogas aos 16 anos para se integrar a um grupo de amigos. Ao longo de 16 anos,
+                            enfrentei uma batalha contra o vício, experimentei várias substâncias, incluindo maconha, cocaína e
+                            crack.
+                            Me envolvi com tráfico de drogas, enfrentei desafios perigosos e sofrir acidentes. Diante da
+                            insistência da minha família, eu reconheci a necessidade de mudar de vida e aceitei ajuda. Em março
+                            de 2009, eu fiquei internado no Desafio Jovem, onde recebi apoio e cuidados que o me ajudou a me
+                            recuperar. Após minha alta terapêutica em agosto de 2009,comecei a reconstruir minha vida. Com
+                            determinação e fé, eu conseguiu permanecer longe das drogas por 11 anos. Atualmente, eu me encontro
+                            estabilizado como motoboy, case-me novamente com minha esposa e desfruto de uma vida e familiar
+                            feliz.”<br>
+                            Tenho meu emprego, minha moto para trabalhar, um carro para lazer com minha família.<br> Deus continua
+                            me abençoando de uma forma extraordinária!</p>
+
+                            <i class="bi bi-quote quote-icon"></i>
+
+                            <div class="details">
+                                <span class="testimonial-name">José Agusto</span>
+                                <span class="former-addict">Ex-viciado em Drogas</span>
+                            </div><!--Div details-->
+                    </div><!--Div testimonial-slide-->
+
+                    <div class="testimonial-slide">
+                        <img src="/assets/imgs/pessoa 2.avif" alt="" class="testimonial-img">
+                        <p>"Eu tive que tomar consciência que a bebida estava acabando com a minha vida. Eu percebi também que
+                            tinha coisas melhores para mim e eu me permiti ser ajudado, primeiro por mim mesmo e pelo meu
+                            próximo também.
+                            Hoje sou escultor, porteiro e jardineiro, e estou retomando os laços com minha família. Eu reconheço
+                            que o álcool não afeta apenas eu mesmo, mas quem está ao redor também.
+                            Eu estou há quase nove meses sem fazer o uso do álcool e agora sinto como se estivesse aprendendo a
+                            viver limpo. São novos sentimentos e uma nova maneira de viver, já que fiz o uso por 35 anos. Estou
+                            feliz comigo mesmo, as coisas estão fluindo bem e estão aparecendo boas oportunidades no meu
+                            caminho.”
+                            <br> Quero, cada vez mais, ver o mundo com outros olhos, com o olhar da sobriedade e mente aberta!</p>
+
+                            <i class="bi bi-quote quote-icon"></i>
+
+                            <div class="details">
+                                <span class="testimonial-name">Franciso de Assis</span>
+                                <span class="former-addict">Ex-viciado em Bebidas Alcoólicas</span>
+                            </div><!--Div details-->
+                    </div><!--Div testimonial-slide-->
+
+                    <div class="testimonial-slide">
+                        <img src="/assets/imgs/pessoa 3.webp" alt="" class="testimonial-img">
+                        <p>"Aos 12 anos, comecei a fumar para me sentir mais adulta e aceita entre meus amigos. Por anos, o cigarro foi meu refúgio e companheiro constante. No entanto, após enfrentar problemas de saúde e perceber o impacto negativo em minha vida, decidi fazer uma mudança. Com determinação e apoio da família e amigos, consegui superar esse vício. Hoje, aos 18 anos, estou livre do cigarro e me sinto mais saudável e confiante do que nunca!” 
+                            <br>Essa jornada me ensinou a importância do autocuidado e da força interior para superar desafios!</p>
+
+                            <i class="bi bi-quote quote-icon"></i>
+
+                            <div class="details">
+                                <span class="testimonial-name">Joana Sousa</span>
+                                <span class="former-addict">Ex-viciada em Tabagismo</span>
+                            </div><!--Div details-->
+                    </div><!--Div testimonial-slide-->
+
+                    <div class="testimonial-slide">
+                        <img src="/assets/imgs/pessoa 4.avif" alt="" class="testimonial-img">
+                        <p>"Durante anos, me vi presa em um ciclo de jogos de azar. O que começou como uma distração inocente logo se transformou em uma obsessão devastadora. 
+                            Perdi não apenas dinheiro, mas também minha paz de espírito e conexões significativas com amigos e familiares. 
+                            A dor das perdas financeiras foi apenas a ponta do iceberg de uma espiral descendente que afetou todos os aspectos da minha vida. 
+                            Percebi que estava perdendo o controle da minha vida.” 
+                            <br>Decidi mudar. Com apoio e determinação, superei o vício. 
+                            <br>Hoje, valorizo cada dia e reconstruo o que perdi! 
+                            Se você está lutando, saiba que é possível vencer.<br> 
+                            Há esperança e ajuda disponíveis.<br> 
+                            Mantenha-se forte!</p>
+
+                            <i class="bi bi-quote quote-icon"></i>
+
+                            <div class="details">
+                                <span class="testimonial-name">Joana Sousa</span>
+                                <span class="former-addict">Ex-viciada em Tabagismo</span>
+                            </div><!--Div details-->
+                    </div><!--Div testimonial-slide-->
+                    <button class="prev-slide"></button>
+                    <button class="next-slide"></button>
+            </div><!--Div testimonials-->
+        </section>
+
+            <!--PARTE DO VÍDO-->
+    <section id="Witness">
+        <h4>Depoimentos em Vídeo</h4>
+        <div class="video-grid">
+            <div class="video-alcohol">
+            <video src="/assets/videos/Depoimento de ex dependente químico(360P).mp4"
+            controls
+            width="500"
+            >
+        </video>
+        <div class="video-overlay"></div>
+        </div>
+        <div class="video-alcohol">
+            <video src="/assets/videos/Depoimento de um viciado em drogas(360P).mp4"
+            controls
+            width="500"
+            >
+        </video>
+        <div class="video-overlay"></div>
+        </div>
+        <div class="video-alcohol">
+            <video src="/assets/videos/EU ME VICIEI COM AS APOSTAS...  _ CORTES PODGREEN(360P).mp4"
+            controls
+            width="500"
+            >
+        </video>
+        <div class="video-overlay"></div>
+        </div>
+        <div class="help-depoimento">
+            <a href="/pages/Quarta Pagina/quarta.html"><button>MEU DEPOIMENTO</button></a>
+    </section>
+
+    </header>
+
+    <!--LINK DO SWIPER JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- FINAL DO LINK DO SWIPER JS-->
     <script src="/js/pagina_de_dentro.js"></script>
 </body>
 </html>
