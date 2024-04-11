@@ -449,8 +449,21 @@ h4 {
 }
 
 footer {
-    background-color: #fff; /* Fundo branco */
-    color: #333; /* Texto preto */
+    background-color: #bec3c4; 
+    color: #012e36; 
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+}
+
+footer .footer-content {
+    max-width: 1200px; 
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #0a0808;
 }
