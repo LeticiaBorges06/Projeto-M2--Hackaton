@@ -4,15 +4,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #c6c6c6;
     color: #333;
 }
 
 header {
-    background-color: #8e44ad;
+    background-color:  #0b412c;;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+h2 {
+    color: #bce974;
 }
 
 main {
@@ -21,7 +25,7 @@ main {
 
 /* Estilos do formulário */
 .form-section {
-    background-color: #fff;
+    background-color:  #0b412c;;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,6 +39,7 @@ main {
 form label {
     display: block;
     margin-bottom: 5px;
+    color: #bce974;
 }
 
 form input,
@@ -47,7 +52,7 @@ form textarea {
 }
 
 form button {
-    background-color: #8e44ad;
+    background-color: #235735;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -56,7 +61,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #6c3483;
+    background-color: #bce974;
 }
 
 /* Estilos dos depoimentos */
