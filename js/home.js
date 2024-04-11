@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Previne o comportamento padrão do botão (neste caso, para seguir o link)
         event.preventDefault();
         // ele simula o redirecionamento para a página de cadastro
-        alert('Redirecionando para a página de cadastro...');
     });
 
     // Seleciona o botão de Entrar como Visitante
@@ -16,6 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
         // Previne o comportamento padrão do botão (neste caso,para seguir o link)
         event.preventDefault();
         // ele Simula o login como visitante
-        alert('Entrando como visitante...');
     });
 });
