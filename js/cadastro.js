@@ -5,31 +5,27 @@ const users=[
     },
 
     {
-        login: 'MonicaInchada',
+        login: 'MonicaInchada@gmail.com.br',
         pass: '123456Senhaforte'
     },
 
 
     {
-        login: 'EleonorProgramador',
+        login: 'EleonorProgramador@gmail.com',
         pass: 'MaquinaDeLavarBarata123'
     },
 
     {
-        login: 'AldeaoRonaldo',
+        login: 'AldeaoRonaldo@hotmail.com',
         pass: 'Mojang2012'
     },
 
     {
-        login: 'JustinBebado',
+        login: 'JustinBebado@gmail.com',
         pass: 'S0rry'
-    },
+    }
 
-    {
-        login: '',
-        pass: ''
-    },
-]
+   ]
 const clicar = document.getElementById("btn")
 clicar.addEventListener("click",()=>{
     
@@ -45,9 +41,11 @@ clicar.addEventListener("click",()=>{
 
     }
     if (validaLogin==true){
-        alert("deu bom")
+        alert("Usuario aceito,sucesso!")
     }else{
-        alert("deu ruim")
+        alert("Usuario ou senha invalidos")
     }
 })
+
+
 
