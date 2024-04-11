@@ -40,6 +40,8 @@ clicar.addEventListener("click",()=>{
      }
 
     }
+    window.location ="pages/Quarta pagina/pagina.html"
+
     if (validaLogin===true){
         alert("Usuario aceito,sucesso!")
     }else{
