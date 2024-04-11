@@ -1,0 +1,249 @@
+/* Estilos gerais */
+/* Limpa e corrige a aparência básica do conteúdo, removendo margens e preenchimentos indesejados. */
+* {
+    margin: 0;/*define a margem de um elemento como zero em todos os lados (topo, direita, baixo e esquerda)*/
+    padding: 0; /* Define preenchimento zero em todos os lados */
+    box-sizing: border-box;/* faz com que o tamanho total do elemento inclua o conteúdo, o preenchimento e as bordas*/
+    text-align: center;
+    font-family: Arial, sans-serif;/* Escolhe a fonte que será usada em todo o documento. */
+}
+
+body {
+    line-height: 1.6;/* Ajusta a altura entre as linhas para tornar a leitura mais fácil. */
+    text-align: center;/* Centraliza o texto na página. */
+    color: #fff;/* Define a cor do texto como branco */
+}
+
+/* Estilos para o topo da página */
+.header { 
+    position: relative;/* Permite posicionar livremente*/
+    top: 0;/* posiciona o itens no topo. */
+    left: 0;/* faz com que elemento comece no lado esquerdo. */
+    padding: 20px 10%;/* Preenche o topo. */
+    background: #131d28;/* Cor de fundo */
+    max-width: 4000px;/* É a Largura máxima */
+    max-height: 300px;/* É a Altura máxima */
+    display: flex;/* Usa flexbox para alinhar os elementos */
+    justify-content: space-between;/* Da espaço entre os itens. */
+    align-items: center;/* Alinha os itens verticalmente */
+    z-index: 100;/* Define a ordem dos itens. */
+}
+
+.Logo {
+    position: relative;
+    font-size: 25px;/* Tamanho da fonte */
+    color: #fff; 
+    text-decoration: none; /* Retira o visual extra do link. */
+    font-weight: 600;/* Ajusta a grossura do texto. */
+    z-index: 1; 
+}
+
+.Logo::before {
+    content: '';/*é útil para criar efeitos visuais ou adicionar elementos decorativos sem precisar alterar diretamente o HTML.*/
+    position: absolute;/* posiciona o elemento em um local específico na página */
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#0000cd;/*Cor do plano de fundo falso.*/
+    animation: showRight 1s ease forwards;/* Adiciona uma animação */
+    animation-delay: .4s; /* Atraso na animação ou Tempo de espera para a animação começar */
+    z-index: -1; 
+}
+
+ /* Estilos para os links na barra de navegação */
+.bar a {
+    font-size: 18px;
+    color: #fff; 
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;/*adiciona uma margem de 35 pixels no lado esquerdo de um elemento*/
+    transition: .3s;/* Adiciona uma transição suave */
+}
+
+.bar a:hover {
+    color: blue;/* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos da seção "home" */
+.home {
+    height: 100vh;/* Deixa a altura igual à altura da tela. */
+    background: url('/assets/img/imagem da home 8.jpg') no-repeat;/* Imagem de fundo */
+    background-size: cover;/* Cobertura total da imagem */
+    background-position: center;/* Posicionamento no centro */
+    display: flex;
+    align-items: center;
+    padding: 0 10%;/* Preenchimento horizontal */
+}
+
+.home-container {
+    max-width: 600px;
+}
+
+/* Estilos dos elementos dentro de home-container */
+.home-container h1 {
+    color: #fff ; /* Cor do texto */
+    font-size: 56px; 
+    font-weight: 700;
+    line-height: 1.2;/* Altura da linha */
+}
+
+.home-container h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color:  #fff;/* Cor do texto */
+}
+
+.home-container p {
+    font-size: 19px;
+    margin: 20px 0 40px;/* Margens */
+    color: #fff;
+}
+
+.home-container .btn {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;/* Largura */
+    height: 50px; /* Altura */
+    margin: 20px auto;  /* Centraliza o botão */
+}
+
+/* Estilos dos botões */
+.btn a { 
+    position: relative;
+    display: inline-flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center;/* Alinha os itens horizontalmente */
+    align-items: center;
+    width: 150px;/* Largura */
+    height: 100%;/* Altura */
+    background: transparent; 
+    border: 2px solid #fff;/* Borda sólida */
+    border-radius: 8px;/* Raio da borda */
+    font-size: 19px;  
+    color: black;/* Cor do texto */
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;/* Espaçamento entre caracteres */
+    z-index: 1;
+    overflow: hidden;/* Oculta o conteúdo extra */
+    transition: .5s;/* Transição suave */
+}
+
+.btn a:hover {
+    color: #0000cd;/* Adiciona cor ao passar o mouse */
+}
+
+.btn a:nth-child(2) {
+    background: transparent; /* Fundo transparente */
+    color: black;/* Cor do texto dos botões */
+}
+
+.btn a::before {
+    content: '';/*é útil para criar efeitos visuais ou adicionar elementos decorativos sem precisar alterar diretamente o HTML.*/
+    position: absolute;/* posiciona o elemento em um local específico na página */
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0000cd;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn a:hover::before {
+    width: 100%;/* Largura ao passar o mouse */
+}
+
+
+.home-icons {
+    position: absolute;
+    bottom: 20;/* Distância do fundo */
+    left: 32%;/* Distância da esquerda */
+    transform: translateX(-50%);/* Translação */
+    width: 170px;/* Largura */
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icons a {
+    content: attr(alt);/* Conteúdo do atributo alt */
+    position: relative;
+    display: inline-flex;
+    justify-content: center;/* Alinha itens horizontalmente */
+    align-items: center;
+    width: 40px;/* Largura */
+    height: 40px; /* Altura */
+    background: transparent; /* Fundo transparente */
+    border: 2px solid #000090;/* Borda */
+    border-radius: 50%; /* Raio da borda */
+    font-size: 20px;
+    color:  aqua; /* Cor do texto */
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;/* Oculta conteúdo extra */
+    transition: .5s;
+}
+
+.home-icons a:hover {
+    color: blue;/* Cor ao passar o mouse */
+}
+
+.home-icons a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0000cd;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-icons a:hover::before {
+    width: 100%;/* Largura ao passar o mouse */
+}
+
+.home-img {
+    position: absolute;
+    top: 100;
+    right: 30px;/* Distância da direita */
+    width: 500px;
+    height: 100%;
+    transition: 3s;
+}
+
+.home-img:hover {
+    background: url('/assets/img/imgame da home 6.jpg');/* Cor de fundo ao passar o mouse */
+    opacity: .8s;/* Opacidade */
+}
+
+/* Adicione os estilos para o conteúdo alternativo da imagem */
+.home-img::after {
+    content: attr(alt); /* Mostra o conteúdo do atributo alt */
+    display: block;
+    position: absolute;
+    bottom: 10px;/* Distância do fundo */
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* Animação para o logo */
+@keyframes showRight {
+    100% {
+        width: 0; /* Largura final */
+    }
+}
+
+/* Estilos do footer */
+footer {
+    text-align: center;
+    margin-top: 0;/* Margem do topo */
+    padding: 10px;
+    background-color: #131d28; /* Cor de fundo */
+    color: #fff;
+}
