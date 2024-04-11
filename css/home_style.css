@@ -1,5 +1,6 @@
+
 /* Estilos gerais */
-/* Limpa e corrige a aparência básica do conteúdo, removendo margens e preenchimentos indesejados. */
+
 * {
     margin: 0;/*define a margem de um elemento como zero em todos os lados (topo, direita, baixo e esquerda)*/
     padding: 0; /* Define preenchimento zero em todos os lados */
