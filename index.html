@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Hackathon</title>
     <!--Logo do Hackathon-->
-
+    <!--link de icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--final do link de icones-->  
     <!--Arquivo CSS Global-->
     <link rel="stylesheet" href="/css/global_style.css">
     <!--Arquivo CSS da Home-->
     <link rel="stylesheet" href="/css/home_style.css">
+
+     <!-- Aqui começam as tags para a cabeça do documento -->
 </head>
 <body>
-    
+     <!-- Começa o corpo do documento -->
+    <header class="header">
+        <!-- Cabeçalho com o logo e a barra de navegação -->
+        <a href="#" class="Logo">ReNova</a>
+        <nav class="bar">
+             <!-- Links de navegação -->
+            <a href="/pages/Pagina de Dentro/pagina.html">Página de Acesso</a>
+            <a href="/pages/Cadastro/cadastro.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <section class="home"> <!-- Seção principal da página inicial -->
+        <div class="home-container"><!-- Div para o conteúdo da página inicial -->
+            <h1>Bem Vindo ao ReNova</h1><!-- Título principal -->
+            <h2>"Renove-se. Inspire-se. Transforme o futuro."</h2><!-- Subtítulo -->
+             <!-- Parágrafo de boas-vindas -->
+            <p>Bem-vindo ao Renova, o seu destino para inovação e renovação! Estamos aqui para inspirar e capacitar você a transformar suas ideias em realidade. Com uma abordagem focada na criatividade, tecnologia e sustentabilidade, oferecemos soluções sob medida para impulsionar o seu potencial.</p>
+            <div class="btn"><!-- Div para botões de ação -->
+                 <!-- Botões para cadastro e acesso -->
+                <a href="/pages/Cadastro/cadastro.html"><button id="register">Cadastre-Se</button></a>
+                <a href="/pages/Pagina de Dentro/pagina.html"><button id="Visitor">Entrar como Visitante</button></a>
+            </div><!-- Fim da div de botões -->
+            <div class="home-icons"><!-- Div para ícones -->
+                <!-- Ícones para funcionalidades -->
+                <a href="/pages/Cadastro/cadastro.html"><i class="bi bi-balloon" alt="Ícone de Balão"></i></a>
+                <a href="/pages/Pagina de Dentro/pagina.html"><i class="bi bi-r-square"  alt="Ícone Quadrado"></i></a>
+            </div><!--final da div de icones-->
+        </div><!-- Fim da div home-container -->
+        <span class="home-img" alt="Imagem de Destaque"></span><!-- Imagem de destaque da seção -->
+    </section><!--final da section-->
+      <!-- Rodapé da página -->
+    <footer>
+        <p>ias e Mi por favor nos de um dez, esse site foi feita com muito amor!!</p>
+    </footer>
     <script src="/js/home.js"></script>
 </body>
 </html>
