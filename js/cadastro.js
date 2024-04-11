@@ -30,17 +30,17 @@ const clicar = document.getElementById("btn")
 clicar.addEventListener("click",()=>{
     
     let getEmail = document.getElementById("gmail").value
-    let getPassword = document.getElementById("senha").value
+    let getPassword = document.getElementById("password").value
     let validaLogin = false
     
     for (let i in users){
-     if (getEmail ==users [i].login && getPassword == users [i].pass){
+     if (getEmail ===users[i].login && getPassword === users[i].pass){
         validaLogin = true
         break
      }
 
     }
-    if (validaLogin==true){
+    if (validaLogin===true){
         alert("Usuario aceito,sucesso!")
     }else{
         alert("Usuario ou senha invalidos")
